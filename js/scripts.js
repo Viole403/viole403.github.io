@@ -84,7 +84,7 @@ $(window).on('load', function() {
 	--------------------*/
 	if($('#typed-text').length > 0 ) {
 		var typed2 = new Typed('#typed-text', {
-			strings: ["I'M MAULANA", "MEMBER", "OF "],
+			strings: ["I'M MAULANA", "MEMBER", "OF 407 Acunetix"],
 			typeSpeed: 10,
 			loop:true,
 			backDelay: 2000
