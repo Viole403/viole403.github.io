@@ -10,11 +10,11 @@
 
 'use strict';
 
-$(window).on('load', function() { 
+$(window).on('load', function() {
 	/*------------------
 		Preloder
 	--------------------*/
-	$(".loader").fadeOut(); 
+	$(".loader").fadeOut();
 	$("#preloder").delay(400).fadeOut("slow");
 
 
@@ -26,7 +26,7 @@ $(window).on('load', function() {
 
 	$('.portfolio-filter li').on("click", function(){
 		$(".portfolio-filter li").removeClass("active");
-		$(this).addClass("active");				 
+		$(this).addClass("active");
 		var selector = $(this).attr('data-filter');
 		$(".isotope_items").isotope({
 				filter: selector,
@@ -48,7 +48,7 @@ $(window).on('load', function() {
 		Navigation
 	--------------------*/
 	$('.responsive-switch').on('click', function(e) {
-		$('.site-menu').toggleClass('active');	
+		$('.site-menu').toggleClass('active');
 		e.preventDefault();
 	});
 
@@ -84,7 +84,7 @@ $(window).on('load', function() {
 	--------------------*/
 	if($('#typed-text').length > 0 ) {
 		var typed2 = new Typed('#typed-text', {
-			strings: ["I'M MAULANA", "I'Am", "New Developer"],
+			strings: ["I'M MAULANA", "I'm", "New Developer"],
 			typeSpeed: 10,
 			loop:true,
 			backDelay: 2000
