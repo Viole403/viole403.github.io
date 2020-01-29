@@ -10,7 +10,7 @@
 
 'use strict';
 
-$(window).on('load', function() {
+$(window).on('load', function () {
 	/*------------------
 		Preloder
 	--------------------*/
@@ -24,13 +24,13 @@ $(window).on('load', function() {
 	var $container = $('.isotope_items');
 	$container.isotope();
 
-	$('.portfolio-filter li').on("click", function(){
+	$('.portfolio-filter li').on("click", function () {
 		$(".portfolio-filter li").removeClass("active");
 		$(this).addClass("active");
 		var selector = $(this).attr('data-filter');
 		$(".isotope_items").isotope({
-				filter: selector,
-				animationOptions: {
+			filter: selector,
+			animationOptions: {
 				duration: 750,
 				easing: 'linear',
 				queue: false,
@@ -42,17 +42,17 @@ $(window).on('load', function() {
 });
 
 
-(function($){
+(function ($) {
 
 	/*------------------
 		Navigation
 	--------------------*/
-	$('.responsive-switch').on('click', function(e) {
+	$('.responsive-switch').on('click', function (e) {
 		$('.site-menu').toggleClass('active');
 		e.preventDefault();
 	});
 
-	$('.menu-list>li>a, .sm-close').on('click', function() {
+	$('.menu-list>li>a, .sm-close').on('click', function () {
 		$('.site-menu').removeClass('active');
 	});
 
@@ -66,12 +66,12 @@ $(window).on('load', function() {
 	--------------------*/
 	var hero_h = $('.hero-section').innerHeight(),
 		body_h = $('body').innerHeight(),
-		header_height =  hero_h - body_h;
+		header_height = hero_h - body_h;
 
-	$(window).on('scroll resize',function(e) {
+	$(window).on('scroll resize', function (e) {
 		if ($(this).scrollTop() > header_height) {
 			$('.hero-content').addClass('sticky');
-		}else{
+		} else {
 			$('.hero-content').removeClass('sticky');
 		}
 		e.preventDefault();
@@ -82,11 +82,11 @@ $(window).on('load', function() {
 	/*------------------
 		Typed js
 	--------------------*/
-	if($('#typed-text').length > 0 ) {
+	if ($('#typed-text').length > 0) {
 		var typed2 = new Typed('#typed-text', {
 			strings: ["I'M MAULANA", "I'm", "New Developer"],
 			typeSpeed: 10,
-			loop:true,
+			loop: true,
 			backDelay: 2000
 		});
 	}
@@ -96,7 +96,7 @@ $(window).on('load', function() {
 	/*------------------
 		Background set
 	--------------------*/
-	$('.set-bg').each(function() {
+	$('.set-bg').each(function () {
 		var bg = $(this).data('setbg');
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
@@ -105,13 +105,12 @@ $(window).on('load', function() {
 	/*------------------
 		PROGRESS BAR
 	--------------------*/
-	$('.progress-bar-style').each(function() {
+	$('.progress-bar-style').each(function () {
 		var progress = $(this).data("progress");
 		var prog_width = progress + '%';
 		if (progress <= 100) {
 			$(this).append('<div class="bar-inner" style="width:' + prog_width + '"><span>' + prog_width + '</span></div>');
-		}
-		else {
+		} else {
 			$(this).append('<div class="bar-inner" style="width:100%"><span>100%</span></div>');
 		}
 	});
@@ -124,7 +123,10 @@ $(window).on('load', function() {
 	$('.work-image').magnificPopup({
 		type: 'image',
 		removalDelay: 400,
-		zoom:{enabled: true, duration: 300}
+		zoom: {
+			enabled: true,
+			duration: 300
+		}
 	});
 
 	$('.work-video').magnificPopup({
@@ -137,20 +139,20 @@ $(window).on('load', function() {
 		Service
 	--------------------*/
 	$('.service-slider').owlCarousel({
-		loop:true,
-		autoplay:true,
-		nav:false,
+		loop: true,
+		autoplay: true,
+		nav: false,
 		dots: false,
-		margin:30,
-		responsive:{
-			0:{
-				items:1
+		margin: 30,
+		responsive: {
+			0: {
+				items: 1
 			},
-			720:{
-				items:2
+			720: {
+				items: 2
 			},
-			992:{
-				items:3
+			992: {
+				items: 3
 			}
 		}
 	});
@@ -164,10 +166,10 @@ $(window).on('load', function() {
 		dots: false,
 		nav: true,
 		loop: true,
-		margin:30,
+		margin: 30,
 		smartSpeed: 700,
-		items:1,
-		autoplay:true,
+		items: 1,
+		autoplay: true,
 		navText: ['<i class="ti-arrow-left"></i>', '<i class="ti-arrow-right"></i>']
 	});
 
@@ -181,38 +183,37 @@ $(window).on('load', function() {
 	/*------------------
 		CONTACT FORM
 	--------------------*/
-	$('#contact-form').on('submit', function() {
+	$('#contact-form').on('submit', function () {
 		var send_btn = $('#send-form'),
 			form = $(this),
 			formdata = $(this).serialize(),
 			chack = $('#form-chack');
-			send_btn.text('Wait...');
+		send_btn.text('Wait...');
 
-		function reset_form(){
+		function reset_form() {
 			$("#name").val('');
 			$("#email").val('');
 			$("#massage").val('');
 		}
 
 		$.ajax({
-			url:  $(form).attr('action'),
+			url: $(form).attr('action'),
 			type: 'POST',
 			data: formdata,
-			success : function(text){
-				if (text == "success"){
+			success: function (text) {
+				if (text == "success") {
 					send_btn.addClass('done');
 					send_btn.text('Success');
-					setTimeout(function() {
+					setTimeout(function () {
 						reset_form();
 						send_btn.removeClass('done');
 						send_btn.text('Send Massage');
 					}, 3000);
-				}
-				else {
+				} else {
 					reset_form();
 					send_btn.addClass('error');
 					send_btn.text('Error');
-					setTimeout(function() {
+					setTimeout(function () {
 						send_btn.removeClass('error');
 						send_btn.text('Send Massage');
 					}, 5000);

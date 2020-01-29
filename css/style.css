@@ -11,7 +11,7 @@ Table of contents
 
   @-> Main Styles
   @-> Header Section
-  @-> Hero Section 
+  @-> Hero Section
   @-> About Section
   @-> Service Section
   @-> Resume Section
@@ -177,6 +177,7 @@ ol {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -188,6 +189,7 @@ ol {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -379,11 +381,13 @@ ol {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
+
   50% {
     opacity: .2;
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -397,11 +401,13 @@ ol {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
+
   50% {
     opacity: .2;
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -941,20 +947,24 @@ ol {
   .about-text {
     padding-top: 0;
   }
+
   .about-title {
     margin-bottom: 30px;
   }
+
   .single-progress-item {
     margin-bottom: 35px;
   }
+
   .sp-container {
     width: 100%;
     margin-left: 0;
   }
+
   .portfolio-filter {
     -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
     margin-top: 0;
     margin-left: 0;
     position: relative;
@@ -968,29 +978,35 @@ ol {
   .hero-section {
     height: 900px;
   }
+
   .hero-content {
     padding-left: 70px;
   }
+
   .hero-content h2,
   .hero-section .typed-area h2 {
     font-size: 55px;
   }
+
   .about-text {
     padding-top: 40px;
   }
+
   .sp-container {
     width: 100%;
     margin-left: 0;
   }
+
   .portfolio-filter {
     -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
     margin-top: 0;
     margin-left: 0;
     position: relative;
     padding-bottom: 25px;
   }
+
   .portfolio-details p {
     padding: 0 15px;
     font-size: 20px;
@@ -1008,6 +1024,7 @@ ol {
     padding-right: 12px;
     cursor: pointer;
   }
+
   .sm-close {
     display: block;
     position: absolute;
@@ -1023,12 +1040,13 @@ ol {
     z-index: 9;
     opacity: 0;
     -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
+
   .site-menu {
     position: fixed;
     width: 100%;
@@ -1040,21 +1058,23 @@ ol {
     z-index: 999;
     opacity: 0;
     -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
     -webkit-transition: all 0.4s ease 0.3s;
     -o-transition: all 0.4s ease 0.3s;
     transition: all 0.4s ease 0.3s;
   }
+
   .site-menu.active {
     opacity: 1;
     -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
     -webkit-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
+
   .site-menu.active ul {
     top: 0;
     opacity: 1;
@@ -1062,15 +1082,17 @@ ol {
     -o-transition: all 0.3s ease 0.4s;
     transition: all 0.3s ease 0.4s;
   }
+
   .site-menu.active .sm-close {
     opacity: 1;
     -webkit-transform: rotate(0);
-        -ms-transform: rotate(0);
-            transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
     -webkit-transition: all 0.3s ease 0.4s;
     -o-transition: all 0.3s ease 0.4s;
     transition: all 0.3s ease 0.4s;
   }
+
   .site-menu ul {
     display: table-cell;
     vertical-align: middle;
@@ -1083,9 +1105,11 @@ ol {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
+
   .site-menu li {
     display: block;
   }
+
   .site-menu a {
     font-size: 25px;
     padding: 0px 4px;
@@ -1093,6 +1117,7 @@ ol {
     margin-bottom: 5px;
     display: inline-block;
   }
+
   .site-menu a:after {
     width: 100%;
     left: 2px;
@@ -1100,33 +1125,41 @@ ol {
     margin-left: -3px;
     z-index: -1;
   }
+
   .hero-section {
     height: 100%;
   }
+
   .hero-content {
     position: absolute;
     padding-left: 50px;
     bottom: 20px;
   }
+
   .hero-content h2,
   .hero-section .typed-area h2 {
     font-size: 45px;
   }
+
   .hero-content i {
     font-size: 60px;
   }
+
   .about-text {
     padding-top: 30px;
   }
+
   .about-title {
     margin-bottom: 35px;
   }
+
   .resume-item .resume-year {
     float: none;
     width: auto;
     display: inline-block;
     padding-bottom: 20px;
   }
+
   .resume-item .resume-year:after {
     left: auto;
     top: auto;
@@ -1135,25 +1168,30 @@ ol {
     left: 0;
     bottom: 23px;
   }
+
   .resume-item .resume-text {
     margin-left: 0;
   }
+
   .sp-container {
     width: 80%;
     margin-left: 10%;
   }
+
   .portfolio-filter {
     -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
     margin-top: 0;
     margin-left: 0;
     position: relative;
     padding-bottom: 25px;
   }
+
   .portfolio-details {
     padding-top: 200px;
   }
+
   .portfolio-details p {
     padding: 0 15px;
     font-size: 18px;
@@ -1167,41 +1205,53 @@ ol {
     height: 55px;
     padding-top: 5px;
   }
+
   .responsive-switch {
     padding-top: 4px;
   }
+
   .hero-content {
     padding-left: 30px;
   }
+
   .hero-content h2,
   .hero-section .typed-area h2 {
     font-size: 26px;
   }
+
   .hero-content i {
     font-size: 40px;
   }
+
   .hero-section.hero-style-three .shap-image img {
     top: 1px;
   }
+
   .about-text h2 {
     font-size: 33px;
   }
+
   .resume-item .resume-text h3 {
     font-size: 18px;
   }
+
   .sp-container {
     width: 0;
     margin-left: 0;
   }
+
   .work-item .work-info h3 {
     font-size: 22px;
   }
+
   .portfolio-details {
     padding-top: 130px;
   }
+
   .portfolio-details h2 {
     font-size: 30px;
   }
+
   .work-item .work-info {
     left: 30px;
   }

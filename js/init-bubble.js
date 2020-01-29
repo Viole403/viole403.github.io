@@ -1,4 +1,4 @@
-  function Particle( x, y, radius ) {
+function Particle( x, y, radius ) {
             this.init( x, y, radius );
         }
 
@@ -74,7 +74,7 @@
         };
 
         demo.spawn = function( x, y ) {
-            
+
             var particle, theta, force;
 
             if ( particles.length >= MAX_PARTICLES )
@@ -126,7 +126,7 @@
 
                 touch = demo.touches[i], max = random( 1, 4 );
                 for ( j = 0; j < max; j++ ) {
-                  demo.spawn( touch.x, touch.y );
+                    demo.spawn( touch.x, touch.y );
                 }
 
             }
